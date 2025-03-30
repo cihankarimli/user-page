@@ -516,6 +516,9 @@ h2 {
   justify-content: center;
   margin-top: 30px;
 }
+.view-more-btn i {
+  transform: rotate(-50deg);
+}
 
 .view-more a {
   display: flex;
@@ -534,6 +537,7 @@ h2 {
 
 .arrow-icon {
   transition: transform 0.3s ease;
+  transform: rotate(-50deg);
 }
 
 .view-more a:hover .arrow-icon {
