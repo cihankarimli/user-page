@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Futura-CondensedExtraBold", sans-serif;
 }
 
 body {
   background-color: #f8f9fa;
-  font-family: "Fatura", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -28,7 +27,6 @@ nav {
   display: flex;
   align-items: center;
   padding: 5px 0;
-  font-family: "Fatura", sans-serif;
 }
 
 .nav-logo img {
@@ -47,7 +45,6 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: #f9f9f9;
-  font-family: "Fatura", sans-serif;
 }
 
 .nav-section li {
@@ -105,6 +102,9 @@ nav .nav-section li.active {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  margin-top: 30px;
+  object-fit: cover;
+  object-position: center 10%;
 }
 
 .header-title {
@@ -116,13 +116,11 @@ nav .nav-section li.active {
   gap: 20px;
   align-items: center;
   margin-bottom: 30px;
-  font-family: "futura-pt-condensed", sans-serif;
 }
 
 .user-name {
   font-weight: 500;
   font-size: 34px;
-  font-family: "futura", sans-serif;
 }
 
 .active-view {
@@ -378,7 +376,6 @@ h2 {
 }
 
 .portfolio-title {
-  font-family: "Rubik", sans-serif;
   font-style: italic;
   font-size: 32px;
   font-weight: 700;
@@ -446,7 +443,6 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-left: 100px;
 }
 
 .view-more-btn {
@@ -696,7 +692,6 @@ h2 {
   text-align: center;
   width: 80%;
   max-width: 500px;
-  font-family: "Rubik", sans-serif;
 }
 
 .gallery-text h1 {
@@ -846,7 +841,6 @@ h2 {
   left: 30px;
   color: #000;
   text-align: center;
-  font-family: "Schibsted Grotesk";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -883,7 +877,6 @@ h2 {
   background: #fff;
   color: #272727;
   text-align: center;
-  font-family: "Schibsted Grotesk";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

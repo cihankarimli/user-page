@@ -5,9 +5,10 @@
 }
 
 body {
+  overflow: scroll;
   font-family: "Inter", sans-serif;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .container {
@@ -128,7 +129,6 @@ header {
 
 .profile-name h2 {
   color: rgba(6, 10, 38, 1);
-  font-family: "Futura";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -147,12 +147,10 @@ header {
   width: 300px;
   height: 91px;
   color: var(--main-blue, #060a26);
-  font-family: Futura;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
-  font-family: "Futura";
   font-size: 36px;
   font-weight: 500;
   line-height: 100%;
@@ -162,6 +160,8 @@ header {
 .profile-title h3 {
   font-size: 24px;
   font-weight: 600;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
 }
 
 .highlight {
@@ -173,18 +173,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
   border: 1px solid rgba(203, 193, 193, 0);
   border-radius: 30px;
   border-radius: 30px;
   border: 1px solid #e7e7e7;
   background-color: white;
+  cursor: pointer;
 }
 .edit-profile p {
   width: 80px;
   color: #272727;
   text-align: center;
-  font-family: "Futura Bk BT";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -204,7 +203,6 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #f9f9f9;
-  font-family: "Fatura", sans-serif;
 }
 
 .nav-section li {
@@ -241,7 +239,6 @@ header {
 .create-project h2 {
   color: #060a26;
   text-align: center;
-  font-family: Futura;
   font-size: 40px;
   font-style: normal;
   font-weight: 500px;
@@ -281,7 +278,6 @@ header {
 
 .option-card .option-card-name {
   color: #ff4404;
-  font-family: "Futura Bk BT";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -289,7 +285,6 @@ header {
 }
 .project-number {
   color: #d2d2d2;
-  font-family: "Futura Bk BT";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -302,7 +297,7 @@ header {
 }
 
 .published-projects h2 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
@@ -356,49 +351,4 @@ header {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-  .banner-center {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-name {
-    justify-content: center;
-  }
-
-  .project-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  header,
-  nav,
-  .create-project,
-  .published-projects {
-    padding: 20px;
-  }
-
-  .banner-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .banner-left,
-  .banner-right {
-    display: none;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .project-options {
-    flex-direction: column;
-    align-items: center;
-  }
 }
