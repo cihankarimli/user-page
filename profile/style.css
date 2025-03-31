@@ -77,8 +77,8 @@ header {
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
 }
 
 .profile-image img {
@@ -96,13 +96,18 @@ header {
 
 .badge {
   position: absolute;
-  left: 571px;
+  left: 580px;
   top: 85px;
+  cursor: pointer;
 }
-.badge svg {
+.badge img {
   width: 50px;
   height: 62.329px;
-  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+  background: none;
 }
 
 .profile-info {
@@ -164,7 +169,7 @@ header {
 }
 
 .edit-profile {
-  margin-left: 10px;
+  margin-left: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
