@@ -253,6 +253,7 @@ header {
 }
 
 .option-card {
+  text-decoration: none;
   width: 341px;
   height: 200px;
   padding: 60px 0;

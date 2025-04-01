@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.badge-card {
+  display: flex;
+  width: 600px;
+  height: 550px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.badge-content {
+  background-color: #fff5f3;
+  width: 100%;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.badge-icon {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+  display: block;
+}
+
+.badge-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.badge-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.add-button:hover {
+  background-color: #f9f9f9;
+}
+
+.add-button span {
+  margin-left: 8px;
+}
+
+.locked {
+  background-color: #f0f0f0;
+  opacity: 70%;
+}
+
+.locked .badge-content {
+  background-color: #fff5f3;
+  opacity: 0.9;
+}
+
+.locked-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 100%;
+  background-color: white;
+  font-size: 14px;
+  color: #ff5252;
+  font-weight: 500;
+}
+
+.locked-message svg {
+  margin-right: 8px;
+}
+
+.save-button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 40px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.save-button:hover {
+  background-color: #e64a19;
+}
+
+.plus-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.emoji {
+  margin-left: 5px;
+}
+
+/* Badge icons */
+.silver-badge {
+  background: radial-gradient(
+    circle at center,
+    #e0e0e0 0%,
+    #c0c0c0 50%,
+    #a0a0a0 100%
+  );
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.silver-badge::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: radial-gradient(
+    circle at center,
+    #ffffff 0%,
+    #e0e0e0 50%,
+    #c0c0c0 100%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.silver-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(173, 216, 230, 0.5) 45deg,
+    transparent 90deg,
+    transparent 180deg,
+    rgba(173, 216, 230, 0.5) 225deg,
+    transparent 270deg,
+    transparent 360deg
+  );
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.blue-badge {
+  background: radial-gradient(circle at center, #4169e1 0%, #1e3a8a 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blue-badge::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: radial-gradient(
+    circle at center,
+    #6495ed 0%,
+    #4169e1 50%,
+    #1e3a8a 100%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.blue-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(135, 206, 250, 0.5) 45deg,
+    transparent 90deg,
+    transparent 180deg,
+    rgba(135, 206, 250, 0.5) 225deg,
+    transparent 270deg,
+    transparent 360deg
+  );
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.orange-badge {
+  background: radial-gradient(circle at center, #ff7f50 0%, #ff4500 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.orange-badge::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: radial-gradient(
+    circle at center,
+    #ffa07a 0%,
+    #ff7f50 50%,
+    #ff4500 100%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.orange-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(255, 165, 0, 0.5) 45deg,
+    transparent 90deg,
+    transparent 180deg,
+    rgba(255, 165, 0, 0.5) 225deg,
+    transparent 270deg,
+    transparent 360deg
+  );
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.gold-badge {
+  background: radial-gradient(circle at center, #ffd700 0%, #daa520 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gold-badge::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: radial-gradient(
+    circle at center,
+    #fffacd 0%,
+    #ffd700 50%,
+    #daa520 100%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.gold-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(255, 215, 0, 0.5) 45deg,
+    transparent 90deg,
+    transparent 180deg,
+    rgba(255, 215, 0, 0.5) 225deg,
+    transparent 270deg,
+    transparent 360deg
+  );
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Badge notches */
+.badge-notches {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.badge-notches::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.badge-notches::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
