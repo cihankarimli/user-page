@@ -95,13 +95,13 @@ header {
   top: 81px;
 }
 
-.badge {
+.add-badge {
   position: absolute;
   left: 580px;
   top: 85px;
   cursor: pointer;
 }
-.badge img {
+.add-badge img {
   width: 50px;
   height: 62.329px;
   border-radius: 50%;
