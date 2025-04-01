@@ -1,7 +1,6 @@
+// secilmis badgeslerin  elave olunmasi ucun js kodu ///////
 
 
-
-// Badges elave etmek yeri
 
 const saveButton = document.querySelector('.save-button');
 const addBadge = document.querySelector('.add-badge img');
