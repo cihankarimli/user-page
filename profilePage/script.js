@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
            'insparations': document.querySelector('.gallery-container'),
            'blog': document.querySelector('.blog-section')
        };
+
    
        function handleScroll() {
            const scrollPosition = window.scrollY + 100;
@@ -55,3 +56,4 @@ document.addEventListener('DOMContentLoaded', function() {
            });
        });
    });
+   
