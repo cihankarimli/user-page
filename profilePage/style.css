@@ -7,12 +7,14 @@
 body {
   background-color: #f8f9fa;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -218,13 +220,6 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
-.tools-grid :nth-child(4) {
-}
-.tools-grid :nth-child(3) {
-  margin-right: px;
-}
-.tools-grid :nth-child(1) {
 }
 
 .tool-icon {
