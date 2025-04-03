@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #fff;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
@@ -110,10 +110,10 @@ nav .nav-section li.active {
   flex-shrink: 0;
 }
 .header-img img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 50px;
   object-fit: cover;
   object-position: center 10%;
@@ -170,7 +170,7 @@ nav .nav-section li.active {
   border-radius: 15px;
   overflow: hidden;
   margin: 40px 0;
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 
 .row {
@@ -424,7 +424,8 @@ h2 {
   margin-left: 30px;
 }
 
-.project-card {
+.project-button {
+  border: 1px solid #fff;
   width: 406px;
   height: 471px;
   text-decoration: none;
@@ -436,7 +437,7 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+.project-button:hover {
   transform: translateY(-5px);
 }
 
